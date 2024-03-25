@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height:100vh;
+}
+
+.content{
+    background-color: lightgrey;
+    padding:60px 40px;
+}
+
+.contentH1{
+    text-align: center;
+    font-size: 29px;
+    font-weight:100 bolder;
+    text-transform: capitalize;
+}
+.contentH2{
+    font-size:30px;
+    font-weight:bolder;
+    text-align: center;
+    color: rgb(5, 184, 160);
+    padding-bottom: 32px;
+}
+.contentP{
+    font-size:20px;
+    text-align: center;
+    font-weight: lighter;
+}
+/* input begins */
+.inputField{
+    display: block;
+    min-width: 100%;
+    max-width:60%;
+
+    height: 60px;
+    margin:30px 0px;
+}
+.inputField::placeholder{
+    padding: 20px;
+    font-size: 20px;
+}
+.helpField{
+    width: 100%;
+    height: 18vh;
+    margin-bottom: 20px;
+}
+.helpField::placeholder{
+    font-size: 18px;
+    transform: translate(3%, -50%) ;
+}
+.button{
+    background-color: rgb(29, 28, 28);
+    color:white;
+    height: 45px;
+    font-size: 19px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+a.signUpButton{
+    text-decoration: none;
+}
+.button:hover{
+    background-color: rgb(29, 75, 78);
+    cursor: pointer;
+}
+.privacyP{
+    color: rgb(143, 142, 142);
+    font-size: 13.5px;
+    font-weight: 100;
+}
+.privacyP span{
+    color: rgb(52, 92, 138);
+    font-weight: bolder;
+}
+.privacy a{
+    text-decoration:none;
+    color:rgb(29, 75, 78);
+}
+.privacy a:hover{
+    color: rgb(27, 16, 16);
+    text-decoration: underline;
+}
+/* login page begins */
+.loginContent{
+    height: 100vh;
+    
+}
+.loginButton{
+    display: block;
+    min-width:40%;
+    margin-left: 30%;
+}
+
+/* login page ends */
+/* Project begins */
+
+.projectContent{
+    height: 100vh;
+}
+/* Project ends  */
