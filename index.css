@@ -112,8 +112,95 @@ a.loginButton{
 /* login page ends */
 /* Project begins */
 
-.projectContent{
+.content.one.projectContent{
+    background-color: lightgrey;
     height: 100vh;
-    padding-top: 120px;
+    margin-left: -30px;
 }
+.headLog{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    background-color: rgb(10, 6, 1);
+    justify-content: space-between;
+    align-content: center;
+    height:10vh;
+    position: fixed;
+    margin-top: -60px;
+    margin-left: -10px;
+    width: 100%;
+    text-transform: uppercase;
+    color: lightgrey;
+}
+h2.loggedUser{
+    display: grid;
+    justify-items: center;
+}
+button.closeSession{
+    background-color: #202020;
+    color: lightgrey;
+    border-radius: 30px;
+    max-width:100px;
+}
+button.closeSession:hover{
+    background-color: rgb(3, 59, 92);
+}
+a.closeSession{
+    color:lightgrey;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+/*  where content from user is shown */
+div.transmitterWrap{
+    display: grid;
+    grid-template-columns: 550px 50px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    
+}
+.transmitField{
+    height:2.5em;
+    background-color: rgb(241, 37, 37);
+    display: grid;
+    border-radius: 50px 50px 50px 50px;
+
+}
+.transmitField::placeholder{
+    padding-left: 20px;
+    font-size: 25px;
+    color: black;
+}
+.deleteButton{
+    background-color: rgb(10, 6, 1);
+    color: lightgrey;
+    text-transform: uppercase;
+    max-width: 80px;
+}
+/*  where content from user is shown ends */
+/* bottom fixed area */
+.sendArea{
+    position: fixed;
+    height:100px;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    display: grid;
+    grid-template-columns: 400px 100px;
+    justify-content: space-around;
+    background-color: rgb(10, 6, 1);
+
+}
+.messageField{
+    box-sizing: 10px 0px 0px 10px;
+    border-radius: 15px;
+}
+.sendButton{
+    max-width: 15vw;
+    align-self: center;
+
+}
+a.sendButton{
+    text-decoration: none;
+}
+/* bottom fixed area ends */
 /* Project ends  */

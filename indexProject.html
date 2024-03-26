@@ -10,14 +10,22 @@
     <div class="container projectContainer">
         <div class="content one projectContent">
             <div class="contentOne">
+                <header class="headLog">
+                    <h2 class="loggedUser">welcome jay</h2>
+                    <button class="closeSession"><a href="./indexLogin.html" class="closeSession">Close Session</a></button>
+                </header>
+                <!-- user content shown below -->
+                <div class="transmitterWrap"> 
 
-                <form action="./indexRegistration.html" class="inputForm"> 
-                    <input type="text" class="fsNameField inputField" required placeholder="messageTransmitter *">
-                    <input type="text" class="contactField inputField" required placeholder="Message *">
-                    <a href="./indexRegistration.html" class="registerButton"> 
-                        <input type="button" class="inputField button messageButton" value="message" onclick=" msg() "/>
-                    </a>
-            </form>
+                    <div class="transmitField" id="contentTransmit"> </div>
+                    <!-- <button class="deleteButton">delete</button> -->
+                </div>
+                <div class="sendArea" id="sendArea">
+                    <input type="text" class="messageField inputField" required placeholder="messageTransmitter *" id="transmitter">
+                    <!-- <a href="./indexRegistration.html" class="sendButton">  -->
+                        <input type="button" class="inputField button sendingButton" value="send" id="sendButton"/>
+                    <!-- </a> -->
+                </div>
             </div>
         </div>
     </div>
