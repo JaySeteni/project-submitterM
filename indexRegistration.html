@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Syniverse</title>
+    <title> register</title>
     <link rel="stylesheet" href="./index.css">
     <link rel="shortcut icon" type="image/x-icon" 
     href="/favicon/favicon.ico">
 </head>
-<body>
-    
-
+<body> 
 
 <div class="container">
     <!-- content 1 -->
@@ -27,29 +25,27 @@
     <!-- content 1 ends -->
     <!-- content 2 -->
     <div class="content two">
-      <form action="submit" class="inputForm"> 
-        <input type="text" class="fsNameField inputField" required placeholder="Your Name *">
-        <input type="text" class="lsNameField inputField" required placeholder="Your Surname *">
-        <input type="email" class="emailField inputField" required placeholder="Email *">
-        <input type="tel" class="contactField inputField" required placeholder="Contact *">
-        <input type="country" class="countryField inputField" required placeholder="Country *">
-        <!-- how can we help textfield below-->
-        <input type="text" class="helpField" placeholder="How can we help? *">
-        <!-- button -->
-        <a href="./indexLogin.html" class="signUpButton"> 
-            <input type="button" class="inputField button" value=" Register" onclick="msg()"/>
-        </a>
-        <!-- button ends -->
-        <div class="privacy">
-            <p class="privacyP">By submitting this request, i confirm that 
-                i am opting in to receive Synergy email communications, 
-                and that i have read and agree to the 
-                <span> <a href="./privacy.html" class="Privacy">'Privacy Statement'</a> </span>.</p>
-        </div>
-      </form>
+        <form action="./indexLogin.html" method="get"> 
+            <input type="text" name="firstName" class="fsNameField inputField" placeholder="Your Name: *" required />
+            <input type="text" name="surname" class="lsNameField inputField"  placeholder="Your Surname: *" required />
+            <input type="email" name="email" class="emailField inputField"  placeholder="Email: *" required />
+            <input type="tel" name="phone No" class="contactField inputField"  placeholder="Contact no: 0789564376 *" required minlength="10" />
+            <!-- how can we help textfield below-->
+            <input type="textarea" name="textarea" class="helpField" placeholder="How can we help? *">
+            <!-- button -->
+            <a href="./indexLogin.html" class="registerButton"> 
+                <input type="submit" class="inputField button" value=" Register" onclick="msg()"/>
+            </a>
+            <!-- button ends -->
+            <div class="privacy">
+                <p class="privacyP">By submitting this request, i confirm that 
+                    i am opting in to receive Synergy email communications, 
+                    and that i have read and agree to the 
+                    <span> <a href="./privacy.html" class="Privacy">'Privacy Statement'</a> </span>.</p>
+            </div>
+        </form>
+        <!-- content 2 ends -->
     </div>
-    <!-- content 2 ends -->
-
 </div>
 
 
