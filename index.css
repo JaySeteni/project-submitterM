@@ -1,206 +1,129 @@
-*{
+/* General reset */
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.container{
-    height:100vh;
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
 }
 
-.content{
-    background-color: lightgrey;
-    padding:60px 40px;
+.container {
+    min-height: 100vh;
 }
-.content.one{
+
+/* Content styles */
+.content {
+    padding: 2rem;
+    background-color: lightgrey;
+}
+
+.content.one,
+.content.two {
     background-color: #fff;
 }
-.content.one:hover{
-    background-color: lightgrey;
-}
-.content.two{
-    background-color: #fff;
-}
-.content.two:hover{
-    background-color: lightgrey;
-}
-.contentH1{
+
+.contentH1 {
+    font-size: 1.8rem;
     text-align: center;
-    font-size: 29px;
-    font-weight:100 bolder;
     text-transform: capitalize;
+    margin-bottom: 1rem;
 }
-.contentH2{
-    font-size:30px;
-    font-weight:bolder;
+
+.contentH2 {
+    font-size: 2rem;
     text-align: center;
     color: rgb(5, 184, 160);
-    padding-bottom: 32px;
+    margin-bottom: 1rem;
 }
-.contentP{
-    font-size:20px;
+
+.contentP {
+    font-size: 1.4rem;
     text-align: center;
-    font-weight: lighter;
 }
-/* input begins */
-.inputField{
-    display: block;
-    min-width: 100%;
-    height: 60px;
-    margin:30px 0px;
+
+/* Input styles */
+.inputField {
+    width: 100%;
+    height: 3rem;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    font-size: 1.4rem;
 }
-.inputField::placeholder{
-    padding: 20px;
-    font-size: 20px;
-    
-}
-.helpField{
+
+.helpField {
     width: 100%;
     height: 18vh;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
-.helpField::placeholder{
-    font-size: 18px;
-    transform: translate(3%, -50%) ;
-}
-.button{
+
+/* Button styles */
+.button {
+    display: inline-block;
     background-color: rgb(29, 28, 28);
-    color:white;
-    height: 45px;
-    font-size: 19px;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
     text-transform: uppercase;
     border-radius: 10px;
-}
-a.registerButton{
     text-decoration: none;
 }
-.button:hover{
+
+.button:hover {
     background-color: rgb(29, 75, 78);
-    cursor: pointer;
 }
-.privacyP{
-    color: rgb(143, 142, 142);
-    font-size: 13.5px;
-    font-weight: 100;
+
+/* Login page styles */
+.loginContent {
+    min-height: 100vh;
 }
-.privacyP span{
-    color: rgb(52, 92, 138);
-    font-weight: bolder;
-}
-.privacy a{
-    text-decoration:none;
-    color:rgb(29, 75, 78);
-}
-.privacy a:hover{
-    color: rgb(27, 16, 16);
-    text-decoration: underline;
-}
-/* login page begins */
-.loginContent{
-    height: 100vh;
-    
-}
-.loginButton{
-    display: grid;
-    justify-self: center;
-    min-width:50%;
-}
-a.loginButton{
+
+.loginButton {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
     text-decoration: none;
 }
-
-
-/* login page ends */
-/* Project begins */
-
-.content.one.projectContent{
+/* login ends */
+/* Project style */
+.content.one.projectContent {
     background-color: lightgrey;
-    height: 100vh;
-    margin-left: -30px;
+    min-height: 100vh;
+    margin-left: 0;
 }
-.headLog{
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    background-color: rgb(10, 6, 1);
-    justify-content: space-between;
-    align-content: center;
-    height:10vh;
-    position: fixed;
-    margin-top: -60px;
-    margin-left: -10px;
-    width: 100%;
-    text-transform: uppercase;
-    color: lightgrey;
-}
-h2.loggedUser{
-    display: grid;
-    justify-items: center;
-}
-button.closeSession{
-    background-color: #202020;
-    color: lightgrey;
-    border-radius: 30px;
-    max-width:100px;
-}
-button.closeSession:hover{
-    background-color: rgb(3, 59, 92);
-}
-a.closeSession{
-    color:lightgrey;
-    text-decoration: none;
-    text-transform: capitalize;
-}
-/*  where content from user is shown */
-div.transmitterWrap{
-    display: grid;
-    grid-template-columns: 550px 50px;
-    justify-content: space-around;
-    align-items: center;
-    padding: 30px;
-    
-}
-.transmitField{
-    height:2.5em;
-    background-color: rgb(241, 37, 37);
-    display: grid;
-    border-radius: 50px 50px 50px 50px;
 
-}
-.transmitField::placeholder{
-    padding-left: 20px;
-    font-size: 25px;
-    color: black;
-}
-.deleteButton{
-    background-color: rgb(10, 6, 1);
-    color: lightgrey;
-    text-transform: uppercase;
-    max-width: 80px;
-}
-/*  where content from user is shown ends */
-/* bottom fixed area */
-.sendArea{
+/* Bottom fixed area style */
+.sendArea {
     position: fixed;
-    height:100px;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    bottom: 0px;
-    left: 0px;
-    display: grid;
-    grid-template-columns: 400px 100px;
-    justify-content: space-around;
+    padding: 1rem;
     background-color: rgb(10, 6, 1);
-
 }
-.messageField{
-    box-sizing: 10px 0px 0px 10px;
+
+.messageField {
+    width: 80%;
+    height: 2rem;
+    padding: 0.5rem;
     border-radius: 15px;
 }
-.sendButton{
-    max-width: 15vw;
-    align-self: center;
 
-}
-a.sendButton{
+.sendButton {
+    display: inline-block;
+    background-color: rgb(29, 28, 28);
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 10px;
     text-decoration: none;
 }
-/* bottom fixed area ends */
-/* Project ends  */
+
+.sendButton:hover {
+    background-color: rgb(29, 75, 78);
+}
+/* project ends */

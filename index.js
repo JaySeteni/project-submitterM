@@ -3,26 +3,22 @@ const transmitter = document.getElementById("transmitter");
 const sendButton = document.getElementById("sendButton");
 const sendArea = document.getElementById("sendArea");
 
-// function onButtonClick(){
-//     contentTransmit.innerText = transmitter.value;
-// };
+
 sendButton.addEventListener('click', function(){
-
-    contentTransmit.innerText = transmitter.value;
+    const currentDate = new Date();
+    const currentTime = currentDate.toLocaleTimeString();
+    const currentDateFormatted = currentDate.toDateString();
+    let message =  transmitter.value.trim();
+    
+    console.log(message)
+    if(message){
+        message =  transmitter.value.trim() + ": " + " " + currentTime + " - " + currentDateFormatted;
+            contentTransmit.innerHTML = `<div> <p>${message}</p>  <button onclick="deleteMessage(this)">Delete</button></div>` +  contentTransmit.innerHTML;
+            transmitter.value = "";
+        }
 });
-
-
-function getCurrentDateTime(){
-    const now = new Date();
-    const date = now.toDateString();
-    const time = now.hetHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
-    return date + " " + time;
+function deleteMessage(button) {
+    button.parentNode.remove();
 }
-sendButton.addEventListener('click', function(){
-    transmitter.value;
-    let dateTime =  getCurrentDateTime();
-    contentTransmit;
-    contentTransmit.innerHTML += "<p>" + dateTime + " - " + transmitter.value + "</p>";
-});
 
 
