@@ -1,28 +1,25 @@
-/* General reset */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* Global styles */
 body {
     font-family: Arial, sans-serif;
 }
 
 .container {
     min-height: 100vh;
+    background-color: red;
 }
 
-/* Content styles */
 .content {
     padding: 2rem;
     background-color: lightgrey;
 }
 
-.content.one,
-.content.two {
-    background-color: #fff;
+.content{
+    background-color: rgb(223, 231, 228);
 }
 
 .contentH1 {
@@ -87,6 +84,19 @@ body {
     font-size: 1rem;
     text-decoration: none;
 }
+p#register{
+    padding: 10px 30px;
+}
+a.register{
+    color: green;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+a.register:hover{
+    color:rgb(21, 22, 22);
+    border-radius: 3px;
+
+}
 /* login ends */
 /* Project style */
 .content.one.projectContent {
@@ -126,4 +136,11 @@ body {
 .sendButton:hover {
     background-color: rgb(29, 75, 78);
 }
-/* project ends */
+
+/* Main Project styles */
+div.contentNbutton{
+    background-color: red;
+    display: grid;
+    grid-template-columns: 3fr 0.2fr;
+
+}

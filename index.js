@@ -1,3 +1,4 @@
+// main project javascripting
 const contentTransmit = document.getElementById("contentTransmit");
 const transmitter = document.getElementById("transmitter");
 const sendButton = document.getElementById("sendButton");
@@ -10,15 +11,15 @@ sendButton.addEventListener('click', function(){
     const currentDateFormatted = currentDate.toDateString();
     let message =  transmitter.value.trim();
     
-    console.log(message)
+    console.log(message);
     if(message){
         message =  transmitter.value.trim() + ": " + " " + currentTime + " - " + currentDateFormatted;
-            contentTransmit.innerHTML = `<div> <p>${message}</p>  <button onclick="deleteMessage(this)">Delete</button></div>` +  contentTransmit.innerHTML;
+            contentTransmit.innerHTML = `<div class="contentNbutton"> <p class="contentNdelete">${message}</p> <button id="deleteButton" onclick="deleteMessage(this)">Delete</button></div>` +  contentTransmit.innerHTML;
             transmitter.value = "";
         }
 });
 function deleteMessage(button) {
     button.parentNode.remove();
 }
-
+// main project javascripting
 
