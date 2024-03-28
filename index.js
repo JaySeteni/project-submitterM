@@ -10,15 +10,15 @@ sendButton.addEventListener('click', function(){
     const currentTime = currentDate.toLocaleTimeString();
     const currentDateFormatted = currentDate.toDateString();
     let message =  transmitter.value.trim();
-    
+
     console.log(message);
     if(message){
-        message =  transmitter.value.trim() + ": " + " " + currentTime + " - " + currentDateFormatted;
-            contentTransmit.innerHTML = `<div class="contentNbutton"> <p class="contentNdelete">${message}</p> <button id="deleteButton" onclick="deleteMessage(this)">Delete</button></div>` +  contentTransmit.innerHTML;
+        message =  transmitter.value.trim() + " " + " " + currentTime + " - " + currentDateFormatted;
+            const newLocal = contentTransmit.innerHTML = `<div class="contentNbutton"> <p class="contentNdelete">${message}</p> <button id="deleteButton" onclick="deleteMessage(this)">Delete</button></div>` + contentTransmit.innerHTML;
             transmitter.value = "";
         }
-});
-function deleteMessage(button) {
+    });
+    function deleteMessage(button) {
     button.parentNode.remove();
 }
 // main project javascripting

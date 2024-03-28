@@ -10,18 +10,16 @@ body {
 
 .container {
     min-height: 100vh;
-    background-color: red;
+    /* background-color: rgb(199, 223, 214); */
 }
 
 .content {
-    padding: 2rem;
-    background-color: lightgrey;
-}
-
-.content{
+    padding: 1rem;
     background-color: rgb(223, 231, 228);
 }
-
+.companyName{
+    color: rgb(5, 184, 160);
+}
 .contentH1 {
     font-size: 1.8rem;
     text-align: center;
@@ -36,50 +34,63 @@ body {
     margin-bottom: 1rem;
 }
 
-.contentP {
+/* .contentP -for in the p below*/
+ p{
     font-size: 1.4rem;
     text-align: center;
 }
 
-/* Input styles */
+/* Input */
+.signUp{
+    font-size: 30px;
+    text-transform: capitalize;
+}
 .inputField {
     width: 100%;
-    height: 3rem;
-    margin: 1rem 0;
+    height: 2.5rem;
+    margin: 0.5rem 0;
     padding: 0.5rem;
     font-size: 1.4rem;
+    background-color: rgb(232, 236, 235);
 }
-
+.inputField::placeholder{
+    color: black;
+}
 .helpField {
     width: 100%;
-    height: 18vh;
+    height: 7rem;
     margin-bottom: 1rem;
 }
+.helpField::placeholder{
+    font-size: 1.5rem;
+}
 
-/* Button styles */
+/* Button default */
 .button {
-    display: inline-block;
     background-color: rgb(29, 28, 28);
     color: white;
     padding: 0.5rem 1rem;
     font-size: 1rem;
     text-transform: uppercase;
-    border-radius: 10px;
+    border-radius: 13px;
     text-decoration: none;
 }
-
 .button:hover {
-    background-color: rgb(29, 75, 78);
+    background-color: rgb(230, 215, 11);
+    color: black;
+    font-weight: bolder;
 }
-
-/* Login page styles */
+.privacyP{
+    font-size: 14px;
+}
+/* Login page starts */
 .loginContent {
-    min-height: 100vh;
+    height: 100vh;
+    padding-top: 10rem;
 }
 
 .loginButton {
     display: block;
-    margin: 0 auto;
     padding: 0.5rem 1rem;
     font-size: 1rem;
     text-decoration: none;
@@ -95,52 +106,158 @@ a.register{
 a.register:hover{
     color:rgb(21, 22, 22);
     border-radius: 3px;
+    font-weight: bolder;
 
 }
 /* login ends */
 /* Project style */
-.content.one.projectContent {
-    background-color: lightgrey;
+.projectContent {
     min-height: 100vh;
     margin-left: 0;
 }
-
+/* projject header section */
+header.headLog{
+    display: grid;
+    grid-template-columns: 2.5fr .8fr;
+    background-color: rgb(249, 251, 252);
+    height:3rem;
+    align-content: center;
+    position: fixed;
+    left:0;
+    top:0;
+    width:100%;
+}
+h2.loggedUser{
+    padding-left: 20px;
+    border-radius: 15px;
+}
+.closeSessionA{
+    text-decoration: none;
+    color: black;
+}
+.closeSession{
+    border:none;
+    background-color: #a0ebbd94;
+    border-radius: 15px;
+    height:2.8rem;
+    font-size: 16px;
+    width:100%;
+}
+.closeSession:hover{
+    border: 1px solid black;
+}
+/* project header section closed */
 /* Bottom fixed area style */
 .sendArea {
     position: fixed;
     bottom: 0;
     left: 0;
+    z-index: 2;
     width: 100%;
-    padding: 1rem;
-    background-color: rgb(10, 6, 1);
+    background-color: rgba(115, 187, 136, 0.6);
+    display: grid;
+    grid-template-columns: 2fr 0.5fr;
+    gap: 10px;
+    padding: 20px;
 }
-
 .messageField {
-    width: 80%;
-    height: 2rem;
-    padding: 0.5rem;
-    border-radius: 15px;
+    width: 100%;
+    height: 1.5rem;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+.messageField::placeholder {
+    font-style: italic;
+    color: black;
 }
 
 .sendButton {
-    display: inline-block;
     background-color: rgb(29, 28, 28);
     color: white;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
     text-transform: uppercase;
     border-radius: 10px;
-    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
 }
 
 .sendButton:hover {
     background-color: rgb(29, 75, 78);
 }
-
+/* bottom fixed area ends */
 /* Main Project styles */
 div.contentNbutton{
-    background-color: red;
+    background-color: rgb(86, 145, 221);
     display: grid;
-    grid-template-columns: 3fr 0.2fr;
+    grid-template-columns: 4fr 0.5fr;
+    padding: .3rem;
 
+    margin-top: 4rem;
+    border-radius: 15px;
+    gap: 1rem;
+    
 }
+.contentNdelete{
+    font-size: 1.3rem;
+    color: #333;
+    text-transform: capitalize;
+}
+#deleteButton{
+    background-color: rgb(29, 75, 78);
+    border:none;
+    border-radius: .5rem;
+    color:rgb(255, 245, 245);
+}
+#deleteButton:hover{
+    background-color: rgba(8, 100, 107, 0.479);
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+@media (min-width: 550px) {
+    /* mainProject starts */
+    .content{
+        padding: 6rem;
+    }
+    .content.one{
+        background-color: rgb(199, 223, 214);
+    }
+    .sendArea{
+        height:80px;
+    }
+    h2.loggedUser{
+        justify-self: center;
+        align-self: center;
+   }
+   header.headLog{
+    background-color: rgb(253, 255, 255);
+    height:3rem;
+    }
+    .closeSession{
+        align-self: center;
+    }
+    .messageField {
+        height:2.5rem;
+    }
+}
+
+  @media (min-width: 880px)  {
+    .content{
+        padding: 5rem 20rem;
+    }
+    header.headLog{
+        text-align: center;
+        font-size: xx-large;
+    }
+    .messageField {
+        height: 2.5rem;
+    }
+    .contentNdelete {
+        font-size: 24px;
+    }
+    .messageField::placeholder {
+        font-size: 32px;
+    }
+  }
