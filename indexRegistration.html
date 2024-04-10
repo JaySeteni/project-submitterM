@@ -15,36 +15,32 @@
         <h1 class="contentH1">Connected brands own the now.</h1>
         <h2 class="contentH2"><span class="companyName"> NewVerse</span> is how.</h2>
         <p class="contentP">
-            Contact our team to help you <br> 
-            find the best products and solutions.
+            Contact our technical team to find solutions with a single-user message transmitter, shared spaces like no other.
         </p>
         </header>
     </div>
     <!-- content 1 ends -->
     <!-- content 2 -->
     <div class="content two">
-        <form action="./indexLogin.html"> 
-            <label class="signUp"> sign up here:</label>
-            <input type="text" name="firstName" class="fsNameField inputField" placeholder="Your Name: *" required />
-            <input type="text" name="surname" class="lsNameField inputField"  placeholder="Your Surname: *" required />
-            <input type="email" name="email" class="emailField inputField"  placeholder="Email: *" required />
-            <input type="number" name="phone No" class="contactField inputField"  placeholder="Contact no: 0789564376 *" required minlength="10" />
-            
-            <!-- Register button -->
+        <form id="myForm" action="index.html"> 
+            <label class="signUp"> sign up:</label>
+            <input type="text" id="userName" name="username" class="usernameField inputField"  placeholder="user name: *" required />
+            <input type="email" id="emailReg" name="email" class="emailField inputField"  placeholder="Email: *" required />
+            <input type="password" id="pwdReg" name="password" class="passwordField inputField"  placeholder="new password: *" required />
+            <!-- Register button --> 
             <div class="registerButtonCont">
-                <input type="textarea" name="textarea" class="helpField" placeholder="How can we help? *">
                 <a href="./indexLogin.html" class="registerButton"> 
-                    <input type="submit" class=" button inputField" value=" Register  " onclick="msg()"/>
+                    <input type="submit" id="submitBtn" class=" button inputField" value="Register " onclick="msg('registering')"/>
                 </a>
+            </form>
                 <!--Register button ends -->
             </div>
             <div class="privacy">
                 <p class="privacyP">By submitting this request, i confirm that 
-                    i am opting in to receive Synergy email communications, 
+                    i am opting in to receive <span class="companyName">NewVerse</span> email communications, 
                     and that i have read and agree to the 
-                    <span> <a href="./privacy.html" class="Privacy">'Privacy Statement'</a> </span>.</p>
+                    <span id="privacyLnk"> <a href="./privacy.html" class="Privacy">'Privacy Statement'</a> </span>.</p>
             </div>
-        </form>
         <!-- content 2 ends -->
     </div>
 </div>
