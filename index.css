@@ -74,6 +74,13 @@ body {
 .privacyP{
     font-size: 14px;
 }
+a.privacyLnk{
+    color: rgb(62, 62, 65);
+    text-decoration: none ;
+}
+a.privacyLnk:hover{
+    color:rgba(9, 172, 236, 0.849);
+}
 /* Login page starts */
 .loginContent {
     height: 100vh;

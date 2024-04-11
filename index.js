@@ -13,7 +13,8 @@ sendButton.addEventListener('click', function(){
     console.log(message);
     if(message){
         message =  transmitter.value.trim() + " " + " (" + currentTime + " - " + currentDateFormatted + ")";
-           contentTransmit.innerHTML = `<div class="contentNbutton"> <p class="contentNdelete">${message}</p> <button id="deleteButton" onclick="deleteMessage(this)">Delete</button></div>` + contentTransmit.innerHTML;
+           contentTransmit.innerHTML = `<div class="contentNbutton"> <p class="contentNdelete">${message}</p> <button id="deleteButton" onclick="deleteMessage(this)">Delete</button></div>` 
+           + contentTransmit.innerHTML;
            transmitter.value = "";
         }
     });
