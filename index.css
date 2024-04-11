@@ -155,7 +155,7 @@ h2.loggedUser{
     left: 0;
     z-index: 2;
     width: 100%;
-    background-color: rgba(115, 187, 136, 0.6);
+    background-color: rgb(162, 231, 183);
     display: grid;
     grid-template-columns: 2fr 0.5fr;
     gap: 10px;
@@ -190,7 +190,7 @@ h2.loggedUser{
 /* bottom fixed area ends */
 /* Main Project styles */
 div.contentNbutton{
-    background-color: rgb(86, 145, 221);
+    background-color: rgb(133, 179, 240);
     display: grid;
     grid-template-columns: 4fr 0.5fr;
     padding: .3rem;
